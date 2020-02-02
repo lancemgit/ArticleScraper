@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mx-auto" href="/">Investing.com Scraper</a>
+</nav>
+<br><br>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="">
+            <a href="/saved"><button id="scrape-button" type="button" class="btn btn-warning mx-sm-3 mb-2">Saved
+                    Articles</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-title">
+                    <div class="card-body">
+                        <a href={{link}}>{{title}}</a>
+                        <hr>
+                        <p>{{description}}</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-title">
+                    <div class="card-body">
+                        <h4>Add a Note!</h4>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <label for="textarea-note">Write a note here!</label>
+                                <textarea class="form-control" id="textarea-note" rows="3"></textarea>
+                            </div>
+                        </form>
+
+                        <button id="submit-button" type="button" class="btn btn-primary" data-id={{articleId}}>
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-title">
+                    <div class="card-body">
+                        <h4>Notes</h4>
+                        <hr>
+                        <div id="notes-place">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <script src="/js/notes.js"></script>
